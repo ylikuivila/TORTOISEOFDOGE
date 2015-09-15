@@ -68,45 +68,165 @@ class Ohjelma
         {
             System.Console.WriteLine("Tasapeli! Jumankekka!");
             Ties++;
+            PlayedGames++;
+            System.Console.WriteLine("Haluatko pelata uudestaan? Vastaa kyllä tai ei.");
+
+
+            EndChoice = System.Console.ReadLine();
+            EndChoice = EndChoice.ToLower().Trim();
+            if (EndChoice == "kyllä")
+            {
+                goto InputUudestaan;
+            }
+            else
+            {
+                goto Tilastot;
+
+            }
         }
         else if (PlayerOne == 0 && Computer == 2)
         {
             System.Console.WriteLine("Voitit!");
             Victories++;
+            PlayedGames++;
+            System.Console.WriteLine("Haluatko pelata uudestaan? Vastaa kyllä tai ei.");
+
+
+            EndChoice = System.Console.ReadLine();
+            EndChoice = EndChoice.ToLower().Trim();
+            if (EndChoice == "kyllä")
+            {
+                goto InputUudestaan;
+            }
+            else
+            {
+                goto Tilastot;
+
+            }
         }
         else if (PlayerOne == 1 && Computer == 0)
         {
             System.Console.WriteLine("Voitit!");
             Victories++;
+            PlayedGames++;
+            System.Console.WriteLine("Haluatko pelata uudestaan? Vastaa kyllä tai ei.");
+
+
+            EndChoice = System.Console.ReadLine();
+            EndChoice = EndChoice.ToLower().Trim();
+            if (EndChoice == "kyllä")
+            {
+                goto InputUudestaan;
+            }
+            else
+            {
+                goto Tilastot;
+
+            }
         }
         else if (PlayerOne == 2 && Computer == 1)
         {
             System.Console.WriteLine("Voitit!");
             Victories++;
+            PlayedGames++;
+            System.Console.WriteLine("Haluatko pelata uudestaan? Vastaa kyllä tai ei.");
+
+
+            EndChoice = System.Console.ReadLine();
+            EndChoice = EndChoice.ToLower().Trim();
+            if (EndChoice == "kyllä")
+            {
+                goto InputUudestaan;
+            }
+            else
+            {
+                goto Tilastot;
+
+            }
         }
         else if (PlayerOne == 3 && Computer == 0)
         {
             System.Console.WriteLine("WAAAAGH!!!! HÄVISITTE!");
             WAAAGHS++;
             Losses++;
+            PlayedGames++;
+            System.Console.WriteLine("Haluatko pelata uudestaan? Vastaa kyllä tai ei.");
+
+
+            EndChoice = System.Console.ReadLine();
+            EndChoice = EndChoice.ToLower().Trim();
+            if (EndChoice == "kyllä")
+            {
+                goto InputUudestaan;
+            }
+            else
+            {
+                goto Tilastot;
+
+            }
         }
         else if (PlayerOne == 3 && Computer == 1)
         {
             System.Console.WriteLine("WAAAAGH!!!! HÄVISITTE!");
             WAAAGHS++;
             Losses++;
+            PlayedGames++;
+            System.Console.WriteLine("Haluatko pelata uudestaan? Vastaa kyllä tai ei.");
+
+
+            EndChoice = System.Console.ReadLine();
+            EndChoice = EndChoice.ToLower().Trim();
+            if (EndChoice == "kyllä")
+            {
+                goto InputUudestaan;
+            }
+            else
+            {
+                goto Tilastot;
+
+            }
         }
         else if (PlayerOne == 3 && Computer == 2)
         {
             System.Console.WriteLine("WAAAAGH!!!! HÄVISITTE!");
             WAAAGHS++;
             Losses++;
+            PlayedGames++;
+            System.Console.WriteLine("Haluatko pelata uudestaan? Vastaa kyllä tai ei.");
+
+
+            EndChoice = System.Console.ReadLine();
+            EndChoice = EndChoice.ToLower().Trim();
+            if (EndChoice == "kyllä")
+            {
+                goto InputUudestaan;
+            }
+            else
+            {
+                goto Tilastot;
+
+            }
         }
         else if (PlayerOne == 3 && Computer == 2)
         {
             System.Console.WriteLine("WAAAAGH!!!! HÄVISITTE!");
             WAAAGHS++;
             Losses++;
+            PlayedGames++;
+            System.Console.WriteLine("Haluatko pelata uudestaan? Vastaa kyllä tai ei.");
+            
+           
+            EndChoice = System.Console.ReadLine();
+            EndChoice = EndChoice.ToLower().Trim();
+            if (EndChoice == "kyllä")
+            {
+                goto InputUudestaan;
+            }
+            else
+            {
+                goto Tilastot;
+
+            }
         }
         else
         {
@@ -128,7 +248,7 @@ class Ohjelma
             
         }
 
-        Tilastot
+        Tilastot:
         System.Console.WriteLine("Tilastot:");
         System.Console.WriteLine("Pelattuja pelejä: " + PlayedGames);
         System.Console.WriteLine();
